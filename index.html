@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ray Hobbs | Social Media &amp; Web Marketing Portfolio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+:root{--bg:#f5f7fa;--surface:#fff;--text:#14202c;--muted:#566472;--brand:#0f4c81;--brand-ink:#fff;--accent:#e8590c;--line:#dce2e9;--dark:#0b1722;--dark2:#12273a;
+--head:"Barlow Condensed","Arial Narrow",Impact,sans-serif;--body:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e141a;--surface:#17202a;--text:#edf1f5;--muted:#9eaab6;--brand:#5aa7e6;--brand-ink:#07111a;--accent:#ff8a4c;--line:#28333f;--dark:#070c11;--dark2:#0f1d2b}}
+:root[data-theme="dark"]{--bg:#0e141a;--surface:#17202a;--text:#edf1f5;--muted:#9eaab6;--brand:#5aa7e6;--brand-ink:#07111a;--accent:#ff8a4c;--line:#28333f;--dark:#070c11;--dark2:#0f1d2b}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 var(--body)}
+h1,h2,h3{font-family:var(--head);letter-spacing:.01em;line-height:1.05;margin:0}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.btn{display:inline-block;padding:13px 22px;border-radius:8px;font:700 1rem var(--body);text-decoration:none;background:var(--accent);color:#1d0d00;border:2px solid var(--accent);cursor:pointer;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.25)}
+.btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
+.btn.brand{background:var(--brand);border-color:var(--brand);color:var(--brand-ink)}
+.hero{position:relative;color:#fff;background:linear-gradient(160deg,var(--dark) 0%,var(--dark2) 55%,#1c4a73 100%);padding:0 0 64px;overflow:hidden}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:18px;padding-bottom:40px}
+.logo{font:700 1.35rem var(--head);color:#fff}
+nav{display:flex;gap:18px;flex-wrap:wrap;justify-content:flex-end}
+nav a{color:#fff;text-decoration:none;font-size:.9rem;font-weight:500}
+.kicker{display:inline-block;font-weight:700;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:#ffb27d;margin-bottom:14px}
+.hero h1{font-size:clamp(2.4rem,8vw,4.4rem);max-width:800px;text-transform:uppercase}
+.hero p{max-width:600px;color:#cfd9e3;font-size:1.1rem;margin:16px 0 0}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+section{padding:52px 0}
+h2{font-size:clamp(1.9rem,6vw,2.7rem);text-transform:uppercase}
+h2::after{content:"";display:block;width:56px;height:4px;background:var(--accent);margin-top:10px}
+.sub{color:var(--muted);margin:14px 0 24px;max-width:640px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
+.card h3{font-size:1.45rem;margin:6px 0 8px}
+.card p{margin:0 0 12px;color:var(--muted);font-size:.96rem}
+.tag{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.band{background:var(--dark);color:#edf1f5}
+.band .sub{color:#b4c0cc}
+.checks{list-style:none;padding:0;margin:0 0 20px}
+.checks li{padding-left:28px;position:relative;margin-bottom:8px}
+.checks li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:700}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.tab{border:1px solid var(--line);background:var(--surface);color:var(--text);padding:9px 16px;border-radius:99px;font:600 .9rem var(--body);cursor:pointer}
+.tab[aria-selected="true"]{background:var(--brand);color:var(--brand-ink);border-color:var(--brand)}
+.js .panel{display:none}
+.js .panel.on{display:block}
+.panel h3{font-size:1.5rem;margin-bottom:10px}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:.93rem}
+th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:700;white-space:nowrap}
+.pill{display:inline-block;border:1px solid var(--line);border-radius:99px;padding:5px 14px;margin:0 6px 8px 0;font-size:.88rem;background:var(--surface)}
+.contact{background:var(--dark);color:#edf1f5;border-radius:14px;padding:34px 24px;text-align:center}
+.contact h2::after{margin-left:auto;margin-right:auto}
+.contact a{color:#ff9a5c}
+footer{padding:28px 0 40px;color:var(--muted);font-size:.85rem;text-align:center}
+</style>
+</head>
+<body>
+<header class="hero">
+<div class="top"><div class="wrap"><span class="logo">RAY HOBBS</span><nav><a href="#work">Work</a><a href="#calendar">30-day plan</a><a href="#results">Results</a><a href="#contact">Contact</a></nav></div></div>
+<div class="wrap">
+<span class="kicker">Ray Hobbs · Digital Marketing Coordinator</span>
+<h1>Here’s how I’d grow Front Range Property Solutions online.</h1>
+<p>A model website and a 30-day content plan, built to show how I’d turn roofing, siding, windows, painting, decks, and concrete projects into more quote requests.</p>
+<div class="cta"><a class="btn" href="#website">View the website concept</a><a class="btn ghost" href="#calendar">See the 30-day plan</a></div>
+</div>
+</header>
+
+<main>
+<div class="wrap"><section id="work">
+<h2>Featured work</h2>
+<p class="sub">Three pieces I created for this opportunity.</p>
+<div class="grid">
+<div class="card"><span class="tag">Website</span><h3>Model web page</h3><p>A mobile-first site with services, quote request, recent projects, social links, and contact form.</p><a class="btn brand" href="#website">Learn more</a></div>
+<div class="card"><span class="tag">Social media</span><h3>30-day content calendar</h3><p>Seventeen posts across Facebook, Instagram, LinkedIn, and Google Business Profile.</p><a class="btn brand" href="#calendar">See the plan</a></div>
+<div class="card"><span class="tag">Analytics</span><h3>Results tracking</h3><p>A simple monthly report that connects posts to leads, cost, and profit.</p><a class="btn brand" href="#results">See the approach</a></div>
+</div>
+</section></div>
+
+<div class="band"><div class="wrap"><section id="website">
+<h2>Website concept</h2>
+<p class="sub">An unofficial concept page showing how the company’s services could be presented online.</p>
+<ul class="checks">
+<li>Free-quote button in the header, hero, and a sticky bar on phones</li>
+<li>Trust bar with ratings, certifications, and experience</li>
+<li>All six services: roofing, siding, windows, painting, decks and rails, asphalt and concrete</li>
+<li>Before/after slider and tap-to-enlarge project gallery</li>
+<li>Quote request form, contact information, social links, and message form</li>
+</ul>
+<a class="btn" href="concept.html">Open the website concept</a>
+</section></div></div>
+
+<div class="wrap"><section id="calendar">
+<h2>30-day social media plan</h2>
+<p class="sub">About four posts a week on Facebook (F), Instagram (IG), LinkedIn (LI), and Google Business Profile (GBP), rotating between projects, expertise, behind the scenes, social proof, and culture.</p>
+<div class="tabs" role="tablist">
+<button class="tab" role="tab" aria-selected="true" data-p="p1">Week 1</button>
+<button class="tab" role="tab" aria-selected="false" data-p="p2">Week 2</button>
+<button class="tab" role="tab" aria-selected="false" data-p="p3">Week 3</button>
+<button class="tab" role="tab" aria-selected="false" data-p="p4">Week 4</button>
+<button class="tab" role="tab" aria-selected="false" data-p="p5">Wrap-up</button>
+</div>
+
+<div class="panel on" id="p1"><h3>Week 1: Introduce the brand and the work</h3><div class="tw"><table><thead><tr><th>Day</th><th>Platform</th><th>Pillar</th><th>Post idea</th></tr></thead><tbody>
+<tr><td>1</td><td>IG, F</td><td>Culture</td><td>Meet the team: crew photo and a short story about serving the Denver metro</td></tr>
+<tr><td>3</td><td>IG Reel, F</td><td>Roofing</td><td>Before/after of a roof replacement, with a line on protection from hail and snow</td></tr>
+<tr><td>5</td><td>F, GBP</td><td>Expertise</td><td>“5 signs your roof needs attention” checklist</td></tr>
+<tr><td>6</td><td>IG Stories</td><td>Behind the scenes</td><td>A morning on the roof: crew, safety gear, and the day’s plan</td></tr>
+</tbody></table></div></div>
+
+<div class="panel" id="p2"><h3>Week 2: Show expertise and process</h3><div class="tw"><table><thead><tr><th>Day</th><th>Platform</th><th>Pillar</th><th>Post idea</th></tr></thead><tbody>
+<tr><td>8</td><td>LI, F</td><td>Expertise</td><td>How a project goes from free estimate to final walkthrough (carousel)</td></tr>
+<tr><td>10</td><td>IG Reel</td><td>Siding</td><td>Time-lapse of siding going up on one wall</td></tr>
+<tr><td>12</td><td>F, GBP</td><td>Social proof</td><td>Customer review with a project photo and a link to leave a review</td></tr>
+<tr><td>13</td><td>IG, F</td><td>Culture</td><td>Crew spotlight: one team member, their trade, and why they love it</td></tr>
+</tbody></table></div></div>
+
+<div class="panel" id="p3"><h3>Week 3: Educate and engage</h3><div class="tw"><table><thead><tr><th>Day</th><th>Platform</th><th>Pillar</th><th>Post idea</th></tr></thead><tbody>
+<tr><td>15</td><td>IG, F</td><td>Windows</td><td>“When to replace your windows” explainer with a clear call to action</td></tr>
+<tr><td>17</td><td>IG Reel</td><td>Painting</td><td>Transformation: weathered exterior to fresh finish</td></tr>
+<tr><td>19</td><td>LI</td><td>Culture</td><td>Hiring post: open roles and what it’s like to work here</td></tr>
+<tr><td>20</td><td>F, IG Stories</td><td>Engagement</td><td>Poll: “Which exterior color do you prefer?” using two real options</td></tr>
+</tbody></table></div></div>
+
+<div class="panel" id="p4"><h3>Week 4: Build proof and drive leads</h3><div class="tw"><table><thead><tr><th>Day</th><th>Platform</th><th>Pillar</th><th>Post idea</th></tr></thead><tbody>
+<tr><td>22</td><td>IG, F, GBP</td><td>Social proof</td><td>Review roundup: three customer quotes over project photos</td></tr>
+<tr><td>24</td><td>IG Reel</td><td>Decks &amp; rails</td><td>Deck rebuild highlights and a quick maintenance tip</td></tr>
+<tr><td>26</td><td>F, LI</td><td>Asphalt &amp; concrete</td><td>Case study: driveway or patio before/after, with timeline and result</td></tr>
+<tr><td>27</td><td>IG, F</td><td>Safety</td><td>Safety-first moment: ladder safety, protective gear, or a toolbox talk</td></tr>
+</tbody></table></div></div>
+
+<div class="panel" id="p5"><h3>Days 29 to 30: Wrap up and convert</h3><div class="tw"><table><thead><tr><th>Day</th><th>Platform</th><th>Pillar</th><th>Post idea</th></tr></thead><tbody>
+<tr><td>29</td><td>All</td><td>Recap</td><td>“Our month in projects” highlight reel with a link to request a quote</td></tr>
+<tr><td>30</td><td>Internal</td><td>Reporting</td><td>Review results and plan next month based on what performed best</td></tr>
+</tbody></table></div></div>
+
+<p class="sub" style="margin-top:20px"><b>Weekly routine:</b> plan Monday, batch-shoot photos and clips on site midweek (with customer permission), reply to comments within 24 hours, and schedule next week’s posts on Friday.</p>
+</section>
+
+<section id="results">
+<h2>Measuring results</h2>
+<p class="sub">Likes are nice, but quote requests pay the bills. Everything is tied back to leads and jobs.</p>
+<div class="grid">
+<div class="card"><h3>Track every lead</h3><p>A unique phone number and tracking link for each platform, plus “How did you hear about us?” on forms and calls.</p></div>
+<div class="card"><h3>Know the cost</h3><p>Cost per lead and cost per job won show which channels are worth the effort.</p></div>
+<div class="card"><h3>Review monthly</h3><p>A one-page report: leads by source, top three posts, website and Google Business Profile activity.</p></div>
+<div class="card"><h3>Improve</h3><p>Do more of what brings quote requests, test one change at a time, and put ad budget behind proven posts.</p></div>
+</div>
+
+<h3 style="font-size:1.8rem;margin:40px 0 8px">Tracking setup</h3>
+<p class="sub" style="margin-top:0">Start small, then add layers as the company is ready.</p>
+<div class="grid">
+<div class="card"><span class="tag">Step 1</span><h3>Ask on every form and call</h3><p>Add “How did you hear about us?” to the quote form, with options like Facebook, Instagram, Google search, friend or family, and yard sign. Whoever answers the phone asks it too and logs the answer.</p></div>
+<div class="card"><span class="tag">Step 2</span><h3>Add tracking links</h3><p>Give each platform its own link to the website, tagged so Google Analytics shows which one sent each visitor and quote request.</p></div>
+<div class="card"><span class="tag">Step 3</span><h3>Add tracking phone numbers</h3><p>Use a different forwarding number on each profile so the number dialed shows where the caller came from.</p></div>
+</div>
+<p class="sub" style="margin:22px 0 12px">Example setup (placeholders):</p>
+<div class="tw"><table><thead><tr><th>Platform</th><th>Tracking link</th><th>Phone number</th></tr></thead><tbody>
+<tr><td>Facebook</td><td>[website]/?utm_source=facebook&amp;utm_medium=social</td><td>[tracking number 1]</td></tr>
+<tr><td>Instagram</td><td>[website]/?utm_source=instagram&amp;utm_medium=social</td><td>[tracking number 2]</td></tr>
+<tr><td>Google Business Profile</td><td>[website]/?utm_source=google&amp;utm_medium=business-profile</td><td>[tracking number 3]</td></tr>
+<tr><td>LinkedIn</td><td>[website]/?utm_source=linkedin&amp;utm_medium=social</td><td>[tracking number 4]</td></tr>
+</tbody></table></div>
+</section>
+
+<section id="ideas">
+<h2>Ideas I’d explore</h2>
+<p class="sub">Starting points I’d test with your team, tracking the results before expanding.</p>
+<div class="grid">
+<div class="card"><h3>Never miss a call</h3><p>Storm seasons keep phones busy, and a missed call can be a missed job. I’d explore after-hours answering or a missed-call text-back so every caller hears back quickly.</p></div>
+<div class="card"><h3>Know where calls come from</h3><p>Simple tools can transcribe calls and tag them by source, so we can see which posts and platforms lead to booked jobs, not just likes. I’d check state call-recording consent rules first.</p></div>
+<div class="card"><h3>Build trust before the call</h3><p>Clear before/after photos and a simple “what to expect” post about the repair process can help homeowners feel confident, without giving insurance advice.</p></div>
+<div class="card"><h3>Show the project before it starts</h3><p>If the team already uses a measuring and design tool like Hover, 3D color and material previews could become social posts and website visuals, such as “Which siding color would you pick?” I’d only use a homeowner’s property with their permission.</p></div>
+<div class="card"><h3>Track leads in the company’s CRM</h3><p>If the team uses a CRM like AccuLynx, I’d make sure every lead is logged with its source and outcome. That shows which posts and platforms bring booked jobs and feeds the monthly report. I’d work within whatever system the team already uses.</p></div>
+<div class="card"><h3>Start small and measure</h3><p>I’d test one idea at a time, track the results, and only add more once it’s working.</p></div>
+</div>
+</section>
+
+<section id="skills">
+<h2>What I bring</h2>
+<p class="sub">Skills I’d bring to the role.</p>
+<div><span class="pill">Canva design</span><span class="pill">Website development</span><span class="pill">Social media content</span><span class="pill">Metrics evaluation</span><span class="pill">Training &amp; communication</span><span class="pill">Google Analytics</span><span class="pill">Local SEO</span><span class="pill">Google Business Profile</span><span class="pill">Meta Business Suite</span></div>
+</section>
+
+<section id="about">
+<h2>About me</h2>
+<p class="sub">I spent 14 years as a teacher, and along the way I built websites and social media content, designed materials in Canva, and evaluated student metrics to see what was working and what needed to change. I bring the same approach to marketing: clear communication, consistent content, and decisions based on the numbers. In my first 90 days, I’d audit the website and social pages, build a content bank from recent projects, and set up lead tracking.</p>
+</section>
+
+<section id="contact"><div class="contact">
+<h2>Let’s talk</h2>
+<p>I’d love to show you how I’d bring in more quote requests.</p>
+<p><a href="mailto:rdhobbs1@gmail.com">rdhobbs1@gmail.com</a></p>
+</div></section></div>
+</main>
+<footer>© Ray Hobbs</footer>
+
+<script>
+document.documentElement.classList.add('js');
+var tabs=document.querySelectorAll('.tab');
+tabs.forEach(function(t){t.addEventListener('click',function(){
+tabs.forEach(function(x){x.setAttribute('aria-selected','false')});
+t.setAttribute('aria-selected','true');
+document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('on')});
+document.getElementById(t.getAttribute('data-p')).classList.add('on');
+})});
+</script>
+</body>
+</html>
